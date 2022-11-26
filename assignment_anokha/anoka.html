@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anoka Tech Fest</title>
+    <style>
+          
+span{
+  color:rgb(29, 190, 190);
+}
+.navbar{ overflow: hidden;
+         float: none;
+         margin: 20px;
+          }
+          .navbar ul{
+            list-style: none;
+          }
+          .navbar li a{
+            float:right;
+            color:#A4123F;
+            text-align: center;
+            font-style: none;
+            font-family: font2;
+            font-size: 30px;
+            text-decoration: none;
+            padding: 14px 16px;
+          }
+          .navbar li a:hover{
+            color: orange;
+          }
+          .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}           
+    </style>
+  </head>
+  <header>
+    <nav class="navbar">
+      <ul>
+    
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="https://www.amrita.edu/about/">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li style="float:left;"><img src="../photos/logo.svg"></li>
+      </ul>
+    </nav>
+</header>
+  <body style="font-family: font2;">
+    <script>
+      function myFunction() {
+        alert("Your submission has been recorded");
+      }
+      </script>
+    <h3>Registeration here!!</h3>
+  <form>
+    <label>First Name:&nbsp;&nbsp;</label>
+    <input type="text" id="fname" placeholder="text.."><br>
+    <label>Last Name:&nbsp;&nbsp;</label>
+    <input type="text" id="lname" placeholder="text.."><br>
+    <label>College Name:&nbsp;&nbsp;</label>
+    <input type="text" id="cname" placeholder="text.."><br>
+    <label>Roll Number:&nbsp;&nbsp;</label>
+    <input type="text" id="roll" placeholder="text.."><br>
+    <label for="birthday">Date of Birth:&nbsp;&nbsp;&nbsp;</label>
+<input type="date" id="bday" name="birthday"><br>
+    <label>Branch:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <select name="Branch">
+      <option value="select">select</option>
+      <option value="CYS">CYS</option>
+      <option value="CSE">CSE</option>
+      <option value="AIE">AIE</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+      <option value="ARE">ARE</option>
+    </select><br>
+    <label>Year of Passing:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <select name="Branch">
+      <option value="select">select</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+</select>
+  </form>
+      <p>Events you like to take part in:</p>
+<form>
+  <input type="radio" id="inp1" value="HTML">
+  <label>EVENT1</label><br>
+  <input type="radio" id="inp2" value="CSS">
+  <label>EVENT2</label><br>
+  <input type="radio" id="inp3" value="JavaScript">
+  <label>EVENT3</label><br><br>
+</form>
+<text>Post your questions:</text><br>
+<textarea rows="4" cols="50">
+Type your texts here...
+</textarea>
+<p>
+  <text>submit your achievements::</text><form>
+  <input type="file" id="myFile" name="filename">
+</form></p>
+<text>Do what to receive this form through mail?</text><br>
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<p>
+<input onclick="myFunction()" type="submit"></p>
+</body>
+</html>
+
