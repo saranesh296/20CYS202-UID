@@ -1,0 +1,298 @@
+<!--
+Authors:  Saranesh E S 
+Created Date: Dec 2022
+Updated Date: 07 Jan 2023
+Base Template:  No Base Template
+Description: Events Page
+-->
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>ANOKA TECH FEST 2023</title>
+    <link rel='icon' href='../photos/logo1.png'>
+    <style>
+      @font-face {
+        font-family: 'font1';
+        src: url('../photos/font1.ttf');
+      }
+      span{
+        color:rgb(189, 2, 112);
+      }
+      div {
+        display: inline-block;
+      }
+      .navbar{ overflow: hidden;
+        float: none;
+        margin: 20px;
+      }
+      .navbar ul{
+        list-style: none;
+      }
+      .navbar li a{
+        float:right;
+        color:rgb(237, 232, 239);
+        text-align: center;
+        font-style: none;
+        font-family: font1;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 14px 16px;
+      }
+      .navbar a:hover{
+        color: black;
+        background-color: aliceblue;
+      }
+      .back{
+        background-image: url("../photos/back.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vp;  
+        background-attachment: fixed;
+        font-family: font1;
+        text-align: center;
+        }
+      .rr{
+        margin-top: 0%;
+        margin-left: 5%;
+        width: 800px;
+
+      }
+      .rr1{
+        background-color: rgba(10, 9, 9,.8);
+        text-align: center;
+        float: right;
+        width: 800px;
+        margin-top: 5%;
+        margin-right: 5%;
+        font-size: 30px;
+        font-family: font1;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .name{
+        font-family: font1; 
+        font-size: 80px;
+        margin-left: 5%;
+        margin-top: 10%;
+      }
+      .credits{
+        font-family: font1;
+        font-size: 20px;
+        width: 100%;
+        color: aliceblue;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .dis{
+        background-color: black;
+        color: aliceblue;
+        font-size: 25px;
+        margin-top: 0px;
+        font-family: font1;
+      }
+      .about{
+        font-family: font1;
+        font-size: 45px;
+        margin-top: 5%;
+        text-align: center;
+        width: 1800px;
+      }
+      .mar{
+        color: whitesmoke;
+      }
+      .container{
+	background: rgba(126, 50, 170, 0.5);
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	top:40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+  padding: 60px;
+}
+
+
+.fl{
+	float: left;
+  width: 250px;
+  line-height: 35px;
+}
+
+.fontLabel{
+  color: white;
+}
+
+.fr{
+	float: right;
+}
+
+.box{
+	width: 500px;
+	height: 35px;
+	margin-top: 5px;
+	font-family: font1;
+	font-size: 20px;
+}
+
+.textBox{
+	height: 35px;
+	width: 190px;
+	border: none;
+  padding-left: 20px;
+}
+
+.new{
+  float: left;
+}
+
+.radio{
+	color: white;
+	line-height: 38px;
+}
+
+.terms{
+	line-height: 35px;
+	text-align: center;
+	color: white;
+}
+
+.submit{
+	float: center;
+	border: none;
+	color: white;
+	width: 110px;
+	height: 35px;
+	background: #ff6600;
+	text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: rgb(189, 2, 112);
+  color: whitesmoke;
+}
+      .button {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: font1;
+  cursor: pointer;}
+  .col{
+        max-width: 25%;
+        padding: 0px 4px;
+        flex: 25%;
+      }    
+      .row{
+        display: flex;
+        padding: 0px 20px;
+      }
+      .event-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.event-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event-card-title {
+  font-weight: bold;
+}
+
+.event-card-date {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.event-card-body {
+  margin-top: 20px;
+}
+
+.event-card-description {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.event-card-link {
+  color: blue;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+      
+    </style>
+  </head>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="register.html">Register Now!</a></li>
+        <li><a href="about.html">AbouT</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="event.html">events</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li style="float: left;"><img src="../photos/logo.png" width="200px"></li>
+      </ul>
+    </nav>
+  </header>
+  <body class="back">
+  	<div class="event-card">
+      <div class="event-card-header">
+        <h3 class="event-card-title">Spot Photography</h3>
+        <p class="event-card-date">31.03.2023 - Friday | Main Ground</p>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-description">An On-The-Spot Photography Competition that will be held within the campus!<br>
+          This is a free space to use all your observation skills, ideas and creativity as you give meaning to the theme in your very own way.<br>
+          There are no prerequisites for spot on,all you need is an eye and your Camera!</p>
+        <a href="register.html" class="event-card-link">Register!!!</a>
+      </div>
+      
+    </div>
+    <div class="event-card">
+      <div class="event-card-header">
+        <h3 class="event-card-title">Robotics Competition</h3>
+        <p class="event-card-date">01.04.2023 - Saturday | Amriteshwari Hall</p>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-description">An Robotics Competition that will be held within the campus!<br>
+          Guidelines on the size and weight of the robots, the types of materials that can be used, and the types of controllers and sensors that are allowed
+        will be told 3 days in advance.</p>
+        <a href="register.html" class="event-card-link">Register!!!</a>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="event-card-header">
+        <h3 class="event-card-title">Music Concert</h3>
+        <p class="event-card-date">02.04.2023 - Sunday | Main Ground</p>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-description">
+          Sid Sriram - an Indian musician, singer and songwriter known for his work in the Indian film industry - will be visiting Amrita Vishwa Vidyapeetham, Coimbatore. 
+          He has performed in many concerts and music festivals across India</p>
+        <a href="register.html" class="event-card-link">Register!!!</a>
+      </div>
+    </div>
+    
+      <footer><div class="credits">
+        <p>©Copyright © Saranesh E S , II year B.Tech CSE (CYS) |
+          Part of 20CYS202 - User Interface Design | Amrita Vishwa Vidyapeetham, Coimbatore</p>
+      </div></footer>
+  </body>
+</html>
+
